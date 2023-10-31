@@ -1,0 +1,218 @@
+header{
+    background-color: #407BFF;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.logo-image{
+    height: 100px;
+    width: 234px;
+    object-fit: contain;
+}
+.find-block{
+    display: flex;
+    background-color: #F2F2F7;
+    width: 400px;
+    height: 44px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+}
+.profile-block:hover{
+    cursor: pointer;
+}
+.find-block img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px ;
+}
+input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    padding: 0;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.profile-text{
+    font-family: 'Montserrat', sans-serif;
+    color: #F8F8F8;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-right: 16px;
+}
+.profile-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting-block-container .setting-block{
+    margin: 0!important;
+}
+header .setting-block .active-settings{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: var(#F2F2F7, #F2F2F7);
+    color: var(--blue, #407BFF);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+header .setting-block{
+
+    display: flex;
+
+    gap: 8px;
+    width: 158px;
+    height: 36px;
+    flex-direction: row;
+}
+.setting-block-container{
+    width: 197px;
+    display: flex;
+    gap: 16px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+}
+header .setting-block .inactive{
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    background-color: transparent;
+
+}
+.profile-block {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 146%;
+    right: 0;
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0px 0px 8px 8px;
+    background: #407BFF;
+    animation: myAnim 0.5s ease-out 0s 1 normal forwards;
+    z-index: 1000;
+
+}
+@keyframes myAnim {
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+}
+.menu-option a{
+    display: flex;
+    padding: 13px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    color: var(--D-grey, #F2F2F7);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+}
+.menu-option{
+    display: flex;
+    padding: 13px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    color: var(--D-grey, #F2F2F7);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+}
+.menu-option:hover{
+    opacity: 0.6;
+
+}
+
+.modal-button{
+    border: none;
+    color: blue;
+    width: 100%;
+    display: flex;
+    background:none;
+    justify-content: flex-end;
+    height: 20px;
+}
+.code-text{
+    color: var(--app-a-grey, #7C7C80);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.code-fragment{
+    min-height: 85px;
+    min-width: 100%;
+    border-radius: 10px;
+    background: var(--D-grey, #F2F2F7);
+}
+.code-block{
+    width: 100%;
+    height: 100%;
+    font-size: 65px;
+
+    text-align: center;
+    vertical-align: middle;
+    color: var(--app-b-grey, #AEAEB2);
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

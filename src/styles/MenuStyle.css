@@ -1,0 +1,82 @@
+.sidebar-content{
+    z-index: 999999;
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    animation: myAnimClose 1s ease 0s 1 normal forwards;
+
+}
+@keyframes myAnimClose {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.filter-container{
+    padding: 20px 5px;
+    width: 90%;
+
+}
+.filter-content{
+    display: flex;
+    padding: 45px;
+
+}
+.close-button{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #407BFF;
+}
+
+.filter-content{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+
+
+}
+.apply-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.apply-filter button{
+    display: flex;
+    width: 343px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--app-blue, #407BFF);
+    color: var(--app-white, #FEFEFE);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+}
+.apply-filter button:last-child{
+    color: var(--app-a-grey, #7C7C80);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+}

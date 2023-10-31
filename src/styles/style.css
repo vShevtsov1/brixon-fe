@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body, #root ,.home-block,.main-fragment{
+    height:100%;
+}
+.main-block{
+    display: flex;
+    height: 100%;
+
+}
+a {
+    text-decoration: none; /* Remove underline */
+}

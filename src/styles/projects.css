@@ -1,0 +1,211 @@
+.projects-container{
+    position: absolute;
+    z-index: 6;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+
+}
+.active-menu-block{
+    opacity: 0;
+
+    animation: slideUp1 0.5s forwards;
+
+}
+.button-container button{
+    display: flex;
+    width: 343px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--app-blue, #407BFF);
+    color: var(--app-white, #FEFEFE);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+    margin-top: 20px;
+}
+
+.button-container button:last-child{
+    display: flex;
+    width: 143px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(64, 123, 255, 0.34);
+    color: var(--blue, #407BFF);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+.project-component-container{
+    height: 200px;
+    width: 345px;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    flex-shrink: 0;
+
+
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.projects{
+    display: flex;
+    padding: 40px 16px;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+.projects {
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+}
+.projects::-webkit-scrollbar {
+    width: 0;
+}
+
+.projects {
+    scrollbar-width: thin;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+}
+ .image-container {
+    position: relative;
+    display: inline-block;
+     width:345px;
+     height:100%;
+
+
+}
+
+.price-text {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: var(--blue, #407BFF);
+
+    color: var(--D-grey, #F2F2F7);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+
+}
+.name-text{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.name-text span:first-child{
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.name-text span:last-child{
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.info-container{
+    height: 24px;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.info-container-blocks{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row;
+}
+.info-block{
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+}
+
+
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none; /* Hide the menu after the animation */
+    }
+}
+@keyframes slideUp1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+.hide-menu-project {
+    animation: slideUp 0.5s forwards;
+
+
+}
+

@@ -1,0 +1,74 @@
+.welcome-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 84px;
+    justify-content: space-between;
+}
+.welcome-buttons button{
+    width: 100%;
+}
+.have_account{
+    border-radius: 8px;
+    background: var(--C-grey, #FFF)!important;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.20)!important;
+}
+.have_account a{
+    background: none!important;
+    color: #7C7C80!important;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.5px;
+    text-underline:none;
+    text-decoration-line: none!important;
+}
+.welcome-buttons button{
+    background-color: #407BFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FEFEFE;
+
+}
+.dont_have a{
+    background-color: #407BFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #FEFEFE!important;
+    text-decoration: none;
+    text-decoration-line: none!important;
+}
+.welcome-container{
+    gap: 32px;
+    width: 423px;
+    height: 484px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+
+}
+.welcome-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.welcome-image{
+    margin-bottom: 16px;
+    height: 216px;
+    width: 300px;
+}

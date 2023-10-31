@@ -1,0 +1,140 @@
+.filter-container {
+    display: flex;
+    width: 560px;
+    background-color: #FFFFFF;
+    height: 85%;
+    padding-left: 150px;
+    padding-top: 50px;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.setting-block {
+    width: 214px;
+    margin-bottom: 10px;
+}
+
+.name-block {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #7C7C80;
+    margin-bottom: 16px;
+}
+
+.buttons-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+ button {
+    width: 99px;
+    height: 36px;
+    padding: 0; /* Reset padding */
+    background-color: #F2F2F7;
+    border-radius: 8px;
+    gap: 10px;
+    border: none;
+    color: #aeaeb2;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+button.active {
+    background-color: #407BFF;
+    color: #ffffff;
+}
+
+.range-slider .range-slider__range  {
+    height: 2px!important;
+    background-color: #407BFF!important;
+}
+.range-slider{
+    height: 2px!important;
+    z-index: 0!important;
+}
+.range-slider__thumb{
+    background-color: #407BFF!important;
+}
+
+.range-slider__thumb {
+    position: relative;
+    width: 16px!important;
+    height: 16px!important;
+    background-color: #407BFF;
+    border: 1px solid #407BFF!important;
+    border-radius: 50%;
+}
+
+.range-slider__thumb::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+}
+.ranges-block{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.range{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #407BFF;
+
+}
+.name-block-block{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+
+    color: #7C7C80;
+
+}
+.multiple-buttons-container{
+    display: flex;
+    padding-top: 16px;
+}
+.hide-menu {
+    background-color: #407BFF;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -3%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+}
+.hide-menu img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.menu-transition {
+    transition: transform 0.7s ease-in-out;
+}
+
+.hidden-menu {
+    transform: translateX(-90%);
+    z-index: 50;
+    height: 94%;
+    position: absolute;
+}
