@@ -114,7 +114,7 @@ const ModalProject = ({project,setModalVisible}) => {
             </div>
 
             <div className="projects-block2" style={{width:"100%",display:"flex",gap:20}}>
-                <div className="project-info-block" style={{width:"30%",display:"flex",flexDirection:"column",gap:20}}>
+                <div className="project-info-block" style={{width:"30%",display:"flex",flexDirection:"column"}}>
                     <div className="project-name-location">
                         <span>{project.projectName}</span>
                         <span>
@@ -126,7 +126,7 @@ const ModalProject = ({project,setModalVisible}) => {
                             {project.selectedLocation || project.ownLocation}
                         </span>
                     </div>
-                    <div className={"project-line"}/>
+                    <div className={"project-line"} style={{marginBottom:20}}/>
                     <div className="project-variables">
                         <div className="project-variables-block">
                             <span>PRICE</span>
@@ -155,7 +155,7 @@ const ModalProject = ({project,setModalVisible}) => {
                             <span>{project.sizeFrom} sq.ft</span>
                         </div>
                     </div>
-                    <div className="project-buttons">
+                    <div className="project-buttons" style={{marginTop:50}}>
                         <div style={{ cursor: "pointer" }} onClick={() => window.open(`/pdf?projectid=${project._id}`, '_blank')}> <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 22 22" fill="none">
                             <path d="M3.125 13.625C3.125 16.0998 3.125 17.3373 3.89384 18.1061C4.66269 18.875 5.90012 18.875 8.375 18.875H13.625C16.0998 18.875 17.3373 18.875 18.1061 18.1061C18.875 17.3373 18.875 16.0998 18.875 13.625" stroke="white" style={{ stroke: 'white', strokeOpacity: 1 }} strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M11 3.125V14.5M11 14.5L14.5 10.6719M11 14.5L7.5 10.6719" stroke="white" style={{ stroke: 'white', strokeOpacity: 1 }} strokeLinecap="round" strokeLinejoin="round" />

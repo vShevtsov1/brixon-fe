@@ -17,13 +17,13 @@ const ProjectComponent = ({project,chosenCurrency}) => {
     const modalStyles = {
         content: {
             width: '1012px',
-            height: '581px',
+            height: '571px',
             borderRadius: '16px',
             margin: 'auto',
             display: 'flex',
             zIndex: 1000,
             paddingTop:10,
-            paddingBottom:10,
+            paddingBottom:15,
             paddingLeft:20,
             paddingRight:20,
             overflow:"hidden"
