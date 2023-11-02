@@ -26,3 +26,21 @@
     line-height: 20px; /* 125% */
     letter-spacing: -0.5px;
 }
+
+@media (max-width: 768px) {
+    .pin-input-container {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .pin-input {
+        height: auto;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        box-sizing: border-box;
+        background: var(--D-grey, #F2F2F7);
+        border-radius: 8px;
+    }
+}
