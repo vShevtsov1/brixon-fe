@@ -141,3 +141,43 @@ gap: 24px
     line-height: 20px; /* 125% */
     letter-spacing: -0.5px;
 }
+
+@media (max-width: 768px) {
+    .login-block {
+        width: 100%;
+        position: unset;
+        transform: unset;
+    }
+
+    .login-block .register-container,
+    .login-container,
+    .sign-up-code {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: none;
+        border-radius: unset;
+        padding: 32px 16px;
+    }
+
+    .form-login_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-container_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-container_container .input-login {
+        background: var(--D-grey, #F2F2F7);
+        box-shadow: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .get-code {
+        padding-bottom: 80px;
+    }
+}
