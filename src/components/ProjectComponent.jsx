@@ -1,14 +1,40 @@
 import "../styles/projects.css"
 import house from "../assets/images/house.png"
 import {Link} from "react-router-dom";
+import {useState} from "react";
+import Modal from "react-modal";
+import ModalProject from "./ModalProject.jsx";
 const ProjectComponent = ({project,chosenCurrency}) => {
+
+    const [modalVisible,setModalVisible] = useState(false)
     const handleNextClick = () => {
-        history.push('/object-info'); // Replace with the desired route
+        history.push('/object-info');
     };
     if (!project) {
-        // Render nothing when project is undefined
+
         return null;
     }
+    const modalStyles = {
+        content: {
+            width: '1012px',
+            height: '581px',
+            borderRadius: '16px',
+            margin: 'auto',
+            display: 'flex',
+            zIndex: 1000,
+            paddingTop:10,
+            paddingBottom:10,
+            paddingLeft:20,
+            paddingRight:20,
+            overflow:"hidden"
+
+
+        },
+        overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.5)' ,// Adjust the opacity as needed
+            zIndex: 999
+        }
+    };
     function getPaymentPercentString(paymentPlans) {
         // Define the order of priority for plans
         const planPriority = ["Studio", "1", "2", "3", "4+"];
@@ -83,18 +109,21 @@ const ProjectComponent = ({project,chosenCurrency}) => {
                     {getPaymentPercentString(project.paymentPlans)}
                 </div>
             </div>
-            <div className="next" onClick={()=>history.push('/object-info')}>
-                <Link to={`/object-info/${project._id}`}>
+            <div style={{cursor:"pointer"}} className="next" onClick={()=>setModalVisible(true)}>
+
 
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3335 22C17.8563 22 22.3335 17.5228 22.3335 12C22.3335 6.47715 17.8563 2 12.3335 2C6.81065 2 2.3335 6.47715 2.3335 12C2.3335 17.5228 6.81065 22 12.3335 22ZM10.3032 8.46967C10.5961 8.17678 11.0709 8.17678 11.3638 8.46967L14.3638 11.4697C14.6567 11.7626 14.6567 12.2374 14.3638 12.5303L11.3638 15.5303C11.0709 15.8232 10.5961 15.8232 10.3032 15.5303C10.0103 15.2374 10.0103 14.7626 10.3032 14.4697L12.7728 12L10.3032 9.53033C10.0103 9.23744 10.0103 8.76256 10.3032 8.46967Z" fill="#407BFF"/>
-                </svg></Link>
+                </svg>
             </div>
         </div>
 
 
+        <Modal isOpen={modalVisible} style={modalStyles} >
+          <ModalProject project={project} setModalVisible={setModalVisible}/>
 
+        </Modal>
     </div>)
 }
 export default ProjectComponent;

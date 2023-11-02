@@ -133,9 +133,13 @@ const AdminPage3 = ({dataThird,setFirstTabData}) => {
 
     function removePlan(index1) {
         const updatedData = { ...dataThird.data };
+        const updatedPlans = { ...dataThird.plans };
+
         const selectedBedroom = dataThird.selectedBedrooms;
         updatedData[selectedBedroom].splice(index1, 1);
+        updatedPlans[selectedBedroom] -=1
         setFirstTabData({data:updatedData})
+        setFirstTabData({plans:updatedPlans})
         setFileInputRefs((prevState) => {
             const updatedFileInputRefs = { ...prevState };
             if (updatedFileInputRefs[selectedBedroom] && Array.isArray(updatedFileInputRefs[selectedBedroom])) {
