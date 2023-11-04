@@ -1,0 +1,380 @@
+.swiper-slide-next + .swiper-slide:not(:last-child) .gradient {
+    background: linear-gradient(270deg, #D9D9D9 -11.49%, #D9D9D9 88.51%);
+    background: linear-gradient(270deg, color(display-p3 0.851 0.851 0.851) -11.49%, color(display-p3 0.851 0.851 0.851 / 0.00) 88.51%);
+    border-radius: 7px;
+}
+.swiper-button-prev::after {
+
+    font-size:30px;
+    color: black;
+
+}
+
+.swiper-slide img{
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    box-shadow: 0px 4px 15px 0px color(display-p3 0 0 0 / 0.15);
+}
+/* Style the next (right) arrow */
+.swiper-button-next::after {
+
+    font-size:30px;
+    color: black;
+
+}
+.swiper-button-disabled{
+    display: none;
+}
+.show-plans-button span{
+    color: var(--app-white, #FEFEFE);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.5px;
+}
+.show-plans-button{
+    cursor: pointer;
+}
+.project-name-location{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.project-name-location span:first-child{
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.project-name-location span:last-child{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 14px;
+}
+.project-line{
+    background-color: #417AFF;
+    width: 100%;
+    height: 2px;
+}
+.project-variables-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project-variables-block span:first-child{
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.project-variables-block span:last-child{
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.project-variables{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+.project-buttons div:first-child{
+    width: 125px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #417AFF;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.project-buttons div:last-child{
+    width: 165px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #417AFF;
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.project-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+.projects-payment-header div:first-child{
+    color: var(--white, #FFF);
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.projects-payment-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects-payment-header .tittle-block-buttons-line span{
+    width: 40px;
+}
+.projects-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.project-block-buttons{
+    color: var(--white, #FFF);
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight:300;
+    line-height: normal;
+    cursor: pointer;
+}
+.projects-table-header{
+    display: flex;
+}
+.projects-table-header .projects-column:first-child{
+    width: 60%;
+}
+.projects-table-header .projects-column:last-child{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.projects-table-header .projects-column:nth-child(2){
+    width: 20%;
+    display: flex;
+
+    justify-content: center;
+}
+.projects-table-header .projects-column{
+    color: var(--D-grey, #F2F2F7);
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.projects-table-body .row{
+    display: flex;
+    color: var(--white, #FFF);
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.projects-table-body .row .column1{
+    width: 60%;
+
+}
+.projects-table-body .row .column2{
+    display: flex;
+    justify-content: center;
+}
+.projects-table-body .row .column3{
+    display: flex;
+    justify-content: flex-end;
+}
+.projects-table-body .row .column2,
+.projects-table-body .row .column3{
+    width: 20%;
+}
+.projects-table-header{
+    margin-bottom: 20px;
+}
+.projects-table-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-block-buttons-active{
+    color: var(--white, #407BFF);
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight:300;
+    line-height: normal;
+    cursor: pointer;
+}
+.projects-table-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white, #FFF);
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.projects-table-footer .tittle-block-buttons-line span{
+    width: 40px;
+}
+.projects-table-footer{
+    margin-top: 30px;
+}
+.project-modal-plan {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeIn 2s ease 0s 1 normal forwards;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.project-modal-plan-buttons{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.project-modal-plan-buttons-container{
+    width: 284px;
+    height: 31px;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    color: #AEAEB2;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 6px 36px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.project-modal-plan-button{
+    cursor: pointer;
+}
+.project-modal-plan-button-active{
+    color: #4F79F6;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.project-modal-cards .gallery-blocks__block{
+    background-color: white;
+    border-radius: 16px;
+    height: 257px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+}
+.project-modal-cards .gallery-blocks__block img{
+    width: 250px;
+    height: 100%;
+
+}
+.project-modal-cards .layout-size-prices-block .price-block{
+    display: flex;
+    flex-direction: column;
+}
+.project-modal-cards .layout-size-prices-block .price-block span:first-child{
+    color: var(--black, #000);
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.project-modal-cards .layout-size-prices-block .price-block span:last-child{
+    color: var(--A-grey, #7C7C80);
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.projects-hide-modal-cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-hide-button{
+    width: 96px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #417AFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 200% */
+    letter-spacing: -0.5px;
+}
+.close-project{
+    font-size:10px;
+    margin-bottom:-20px;
+    text-align:right;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
